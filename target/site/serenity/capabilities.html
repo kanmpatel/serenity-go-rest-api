@@ -35,10 +35,10 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 4],
+                ['Passing', 5],
                 ['Pending', 0],
                 ['Ignored', 0],
-                ['Failing', 0],
+                ['Failing', 3],
                 ['Errors',  0],
                 ['Compromised',  0],
                 ['Untested',  0],
@@ -68,10 +68,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '4 requirements tested successfully'},
+                {label: '5 requirements tested successfully'},
                 {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
-                {label: '0} requirements with failures'},
+                {label: '3} requirements with failures'},
                 {label: '0} requirements with errors'},
                 {label: '0} requirements compromised'},
                 {label: '0} requirements untested'},
@@ -160,7 +160,7 @@
             <a href="#"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-06-2022 21:24</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-06-2022 06:33</span>
     <br style="clear:left"/>
 </div>
 
@@ -192,9 +192,9 @@
 
                                 <tr>
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria (tests)</a></td>
-                                    <td>4</td>
-                                    <td>4</td>
-                                    <td>0</td>
+                                    <td>8</td>
+                                    <td>5</td>
+                                    <td>3</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td></td>
@@ -223,9 +223,9 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>4</td>
-            <td>4 (100%)</td>
-            <td>0 (0%)</td>
+            <td>8</td>
+            <td>5 (62%)</td>
+            <td>3 (38%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -239,15 +239,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>4</td>
-            <td>4 (100%)</td>
-            <td>0 (0%)</td>
+            <td>8</td>
+            <td>5 (62%)</td>
+            <td>3 (38%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">9 seconds</td>
+                <td colspan="5">19 seconds</td>
         </tr>
         </body>
     </table>
@@ -294,55 +294,78 @@
                                 <td class="SUCCESS-text">2</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 21:24:29">21:24:29</td>
+                                <td class="SUCCESS-text" data-sort="2022-06-21 06:33:30">06:33:30</td>
 
-                                <td class="SUCCESS-text">3.7</td>
+                                <td class="SUCCESS-text">4.51</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
                                     <div class="ellipsis">
 
                                         <a href="f2e97b367c58d93db24c85ea8612361fb1c8e0fbbf832eeaa22391addb3d7bfd.html" class="ellipsis"
-                                           title="Test002 ">
+                                           title="Test002  Expected: map containing [ANYTHING-)...">
                                             Test002
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="FAILURE-text">2</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 21:24:33">21:24:33</td>
+                                <td class="FAILURE-text" data-sort="2022-06-21 06:33:34">06:33:34</td>
 
-                                <td class="SUCCESS-text">1.43</td>
+                                <td class="FAILURE-text">1.26</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
                                     <div class="ellipsis">
 
                                         <a href="757e894685505b88f59ea37d1c852750afd666b53b6065b8aeb647662d6d1838.html" class="ellipsis"
-                                           title="Test003 ">
+                                           title="Test003 1 expectation failed. Expected status...">
                                             Test003
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">4</td>
+                                <td class="FAILURE-text">2</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 21:24:34">21:24:34</td>
+                                <td class="FAILURE-text" data-sort="2022-06-21 06:33:36">06:33:36</td>
 
-                                <td class="SUCCESS-text">1.81</td>
+                                <td class="FAILURE-text">0.94</td>
+                            </tr>
+
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                                    
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
+                                    <div class="ellipsis">
+
+                                        <a href="2365badef252cd8a3f5302613f4395d9a78fdb132c09073dfaa6675ed51abede.html" class="ellipsis"
+                                           title="Test004 1 expectation failed. Expected status...">
+                                            Test004
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="FAILURE-text">2</td>
+
+
+                                <td class="FAILURE-text" data-sort="2022-06-21 06:33:37">06:33:37</td>
+
+                                <td class="FAILURE-text">0.83</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -352,9 +375,32 @@
                                 <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
-                                        <a href="2365badef252cd8a3f5302613f4395d9a78fdb132c09073dfaa6675ed51abede.html" class="ellipsis"
-                                           title="Test004 ">
-                                            Test004
+                                        <a href="2918e609c85bb2d1ebefbac93981df0ba4badfa75e79941229e32f1f0ba7c50b.html" class="ellipsis"
+                                           title="Create a new User data & verify if the User is added ">
+                                            Create a new User data &amp; verify if the User is added
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="SUCCESS-text">8</td>
+
+
+                                <td class="SUCCESS-text" data-sort="2022-06-21 06:33:30">06:33:30</td>
+
+                                <td class="SUCCESS-text">6.13</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="59f9dfe0ae298c822b10dabc7a20ec48b9e2b08b1eeefcf20773c0ad1eeb56b2.html" class="ellipsis"
+                                           title="Verify the User data are successfully created ">
+                                            Verify the User data are successfully created
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
@@ -363,9 +409,55 @@
                                 <td class="SUCCESS-text">4</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 21:24:36">21:24:36</td>
+                                <td class="SUCCESS-text" data-sort="2022-06-21 06:33:37">06:33:37</td>
 
-                                <td class="SUCCESS-text">1.66</td>
+                                <td class="SUCCESS-text">0.86</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="8a42294788f9b11e7a21172ead52d894f25cc01c9535ceb10345c8f3473fcdae.html" class="ellipsis"
+                                           title="Update the User data for given ID ">
+                                            Update the User data for given ID
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="SUCCESS-text">8</td>
+
+
+                                <td class="SUCCESS-text" data-sort="2022-06-21 06:33:38">06:33:38</td>
+
+                                <td class="SUCCESS-text">2.12</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="b03dc80bab0fe3f8db11dce8a33d34a96a3f7a3d802de28511fd6f462208cb07.html" class="ellipsis"
+                                           title="Delete the Prodct data for given ID & verify the record are deleted successfully ">
+                                            Delete the Prodct data for given ID &amp; verify the record are deleted successfully
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="SUCCESS-text">8</td>
+
+
+                                <td class="SUCCESS-text" data-sort="2022-06-21 06:33:40">06:33:40</td>
+
+                                <td class="SUCCESS-text">1.91</td>
                             </tr>
                         </tbody>
                     </table>

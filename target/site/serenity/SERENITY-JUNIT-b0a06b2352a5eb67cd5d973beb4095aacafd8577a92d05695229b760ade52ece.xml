@@ -1,1 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="in.co.gorest.userinfo.UserCurdTest" skipped="0" tests="4" time="8.6" timestamp="2022-06-05T21:24:29.721+01:00[Europe/London]"><testcase classname="in.co.gorest.userinfo.UserCurdTest" name="Test001"/><testcase classname="in.co.gorest.userinfo.UserCurdTest" name="Test002"/><testcase classname="in.co.gorest.userinfo.UserCurdTest" name="Test003"/><testcase classname="in.co.gorest.userinfo.UserCurdTest" name="Test004"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="in.co.gorest.userinfo.UserCurdTest" skipped="0" tests="4" time="7.53" timestamp="2022-06-21T06:33:30.345+01:00[Europe/London]"><testcase classname="in.co.gorest.userinfo.UserCurdTest" name="Test001"/><testcase classname="in.co.gorest.userinfo.UserCurdTest" name="Test002"><failure message="&#10;Expected: map containing [ANYTHING-&gt;&quot;john26163&quot;]&#10;     but: map was [&lt;gender=male&gt;, &lt;name=john1823&gt;, &lt;id=3970&gt;, &lt;email=john76736@gmail.com&gt;, &lt;status=active&gt;]" type="java.lang.AssertionError">
+Expected: map containing [ANYTHING-&gt;"john26163"]
+     but: map was [&lt;gender=male&gt;, &lt;name=john1823&gt;, &lt;id=3970&gt;, &lt;email=john76736@gmail.com&gt;, &lt;status=active&gt;]</failure><system-err>
+Expected: map containing [ANYTHING-&gt;"john26163"]
+     but: map was [&lt;gender=male&gt;, &lt;name=john1823&gt;, &lt;id=3970&gt;, &lt;email=john76736@gmail.com&gt;, &lt;status=active&gt;]&#13;
+in.co.gorest.userinfo.UserCurdTest.test002(UserCurdTest.java:39)&#13;
+</system-err></testcase><testcase classname="in.co.gorest.userinfo.UserCurdTest" name="Test003"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.co.gorest.userinfo.UserCurdTest.test003(UserCurdTest.java:50)&#13;
+</system-err></testcase><testcase classname="in.co.gorest.userinfo.UserCurdTest" name="Test004"><failure message="1 expectation failed.&#10;Expected status code &lt;204&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;204&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;204&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.co.gorest.userinfo.UserCurdTest.test004(UserCurdTest.java:58)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"User curd test","Test002","FAILURE","2022-06-21T06:33:34.889+01:00[Europe/London]","0.0","1.26"
+"User curd test","Test003","FAILURE","2022-06-21T06:33:36.159+01:00[Europe/London]","0.0","0.94"
+"User curd test","Test004","FAILURE","2022-06-21T06:33:37.094+01:00[Europe/London]","0.0","0.83"
